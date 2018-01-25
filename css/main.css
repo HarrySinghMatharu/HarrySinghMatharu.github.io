@@ -303,19 +303,19 @@ hr {
 .my-projects .project1{
     margin-left: 2%;
     margin-right: 1.5%;
-    
+    background-image: url("http://i68.tinypic.com/5wjkhe.jpg");
     background-size: cover;
 }
 .my-projects .project2{
     margin-left: 1%;
     margin-right: 1%;
-  
+    background-image: url("http://i65.tinypic.com/9ia07p.jpg");
     background-size: cover;
 }
 .my-projects .project3{
     margin-left: 1.5%;
     margin-right: 2%;
-    background-image: url(../img/gallery/london.jpg);
+    background-image: url("http://i66.tinypic.com/ve13s0.jpg");
     background-size: cover;
    
 }
@@ -323,7 +323,7 @@ hr {
     margin-left: 2%;
     margin-right: 1.5%;
     margin-top: 2%;
-    background-image: url(../img/gallery/maia.jpg);
+    background-image: url("http://i63.tinypic.com/cnigp.jpg");
     background-size: cover;
    
 }
@@ -331,7 +331,7 @@ hr {
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 2%;
-    background-image: url(../img/gallery/gala.jpg);
+    background-image: url("https://preview.ibb.co/jXbU1b/gala.jpg");
     background-size: cover;
    
 }
@@ -339,7 +339,7 @@ hr {
     margin-left: 1.5%;
     margin-right: 2%;
     margin-top: 2%;
-    background-image: url(../img/gallery/agm.jpg);
+    background-image: url("https://preview.ibb.co/cN4Ggb/agm.jpg");
     background-size: cover;
    
 }
