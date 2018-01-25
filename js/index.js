@@ -1,28 +1,29 @@
-$(document).on('click', 'a[href^="#"]', 
-    function (event) {
-        event.preventDefault();
-
-   $('html, body').animate({
-       scrollTop: $($.attr(this, 'href')).offset().top
-   }, 1000);
+$(document).ready(function(){
+    setBindings();
 });
 
-});
+function setBindings() {
+    $("nav a,header a").click(function(e){
+        e.preventDefault();
+        var sectionID = e.currentTarget.id + "Section";
+        
+        $("html,body").animate({
+            scrollTop: $("#" + sectionID).offset().top
+        }, 1000)
+    })
+}
+
+/*jQuery(document).ready(function($){
+    // Get current path and find target link
+    var path = window.location.pathname.split("/").pop();
     
-    /*$('a[href^="#"]').on('click',function(e){
-     e.preventDefault();
-     
-     var target = this.hash;
-     var $target = $(target);
-     //scroll
-      $('html, body').animate({
-       'scrollTop': $target.offset().top 
-      },1000, 'swing',function () {
-       window.location.hash=target;
-      }); 
-      
-    
-    });
-   
-   });
-   */
+    // Account for home page with empty path
+    if ( path == '' ) {
+      path = 'index.html'#home;
+    }
+        
+    var target = $('nav a[href="'+path+'"]');
+    // Add active class to target link
+    target.addClass('active');
+  });
+*/
