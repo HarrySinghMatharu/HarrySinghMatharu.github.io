@@ -3,7 +3,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #333;
 }
 
@@ -20,11 +20,12 @@ body{
     font-size: 17px;
     line-height: 1.7;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 nav{
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
-    background-color: #e7e7e7;
+    background-color: white;
     width: 100%;
     margin:auto;
     overflow:hidden;
@@ -39,24 +40,38 @@ nav:after {
 }
 .logo{
     float: left;
-    margin: 16px 0 16px 50px;
-    font-weight: 900;
+    margin: 16px 0 16px 180px;
+    font-weight: 300;
     text-transform: uppercase;
+    line-height: 24px;
 }
 
 .logo a{
     display: inline-block;
-    color: #777;
+    color: #f26651;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 5px;
+    letter-spacing: 3px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #555;
 }
 .menu{
     
     float: right;
     margin: 0;
     margin-top: 16px;
-    margin-right: 30px;
+    margin-right: 150px;
 }
+
+.menu .active {
+    color: #f26651;
+}
+
 .menu a{
     color: #777;
     text-decoration: none;
@@ -75,12 +90,14 @@ nav:after {
 .menu ul li a{
     text-decoration: none;
     padding: 20px 10px 20px 10px;
+    font-size: 1.2em;
 }
 
 .menu ul li a:hover{
    
-    color: black;
-    font-weight: bold;
+    color: #f26651;
+    
+    font-weight: 300;
     transition: all 0.5s ease;
 }
 
@@ -126,7 +143,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 2px solid #f7f7f7;
 }
 .button-work, .button-contact{
     background-color: #777;
@@ -143,7 +160,7 @@ hr {
 .button-work:hover, .button-contact:hover{
     background: white;
     text-decoration: none;
-    color: #777;
+    color: #f26651;
     transition: all 0.5s ease;
 }
 
@@ -186,11 +203,11 @@ hr {
     content:'';
     position: absolute;
     width: 80px;
-    height: 2px;
+    height: 5px;
     margin-left: -40px;
     left: 50%;
     bottom: 10px;
-    background-color: grey;
+    background-color: rgb(77, 225, 245);
 }
 .about .col-left, .about .col-right {
     width: 50%;
@@ -235,7 +252,7 @@ hr {
 /*------projects-------*/
 
 .my-projects {
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -243,6 +260,7 @@ hr {
     margin: auto;
     overflow: hidden;
 }
+
 
 .my-projects:after{
     content: '';
@@ -259,14 +277,14 @@ hr {
 }
 
 .my-projects h2:after{
-    content:'';
+    content: '';
     position: absolute;
     width: 80px;
-    height: 2px;
+    height: 5px;
     margin-left: -40px;
     left: 50%;
     bottom: 0px;
-    background-color: black;
+    background-color: #f26651;
     
     
 }
@@ -285,19 +303,19 @@ hr {
 .my-projects .project1{
     margin-left: 2%;
     margin-right: 1.5%;
-    background-image: url("http://i68.tinypic.com/5wjkhe.jpg");
+    
     background-size: cover;
 }
 .my-projects .project2{
     margin-left: 1%;
     margin-right: 1%;
-    background-image: url("http://i65.tinypic.com/9ia07p.jpg");
+  
     background-size: cover;
 }
 .my-projects .project3{
     margin-left: 1.5%;
     margin-right: 2%;
-    background-image: url("http://i66.tinypic.com/ve13s0.jpg");
+    background-image: url(../img/gallery/london.jpg);
     background-size: cover;
    
 }
@@ -305,7 +323,7 @@ hr {
     margin-left: 2%;
     margin-right: 1.5%;
     margin-top: 2%;
-    background-image: url("http://i63.tinypic.com/cnigp.jpg");
+    background-image: url(../img/gallery/maia.jpg);
     background-size: cover;
    
 }
@@ -313,7 +331,7 @@ hr {
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 2%;
-    background-image: url("http://i65.tinypic.com/zo9b1u.jpg");
+    background-image: url(../img/gallery/gala.jpg);
     background-size: cover;
    
 }
@@ -321,7 +339,7 @@ hr {
     margin-left: 1.5%;
     margin-right: 2%;
     margin-top: 2%;
-    background-image: url("http://i66.tinypic.com/514tix.jpg");
+    background-image: url(../img/gallery/agm.jpg);
     background-size: cover;
    
 }
@@ -333,19 +351,19 @@ hr {
    
 }
 .my-projects .overlay:hover{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(72, 249, 239, 0.5);
     padding-top: 130px;
     transition: all 0.5s ease-in;
     padding-top: 130px;
 }
 .overlay a{
     display: inline-block;
-    color: #fff;
+    color: #f26651;
     font-size: 18px;
     padding: 10px 20px;
-    border: 1px solid #fff;
     text-decoration: none;
     font-weight: bold;
+    background-color: #fff;
 }
 
 /*------contact section-----------*/
@@ -368,14 +386,14 @@ hr {
 }
 
 .contact-section h2:after{
-    content:'';
+    content: '';
     position: absolute;
     width: 80px;
-    height: 2px;
+    height: 5px;
     margin-left: -40px;
     left: 50%;
     bottom: 0px;
-    background-color: grey;
+    background-color: #f0fd00;
 }
 .social-container {
     width: 80%;
