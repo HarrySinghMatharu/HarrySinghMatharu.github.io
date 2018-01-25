@@ -303,7 +303,7 @@ hr {
 .my-projects .project1{
     margin-left: 2%;
     margin-right: 1.5%;
-    background-image: url("http://i68.tinypic.com/5wjkhe.jpg");
+    background-image: url(http://i68.tinypic.com/5wjkhe.jpg);
     background-size: cover;
 }
 .my-projects .project2{
