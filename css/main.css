@@ -25,10 +25,11 @@ body{
 nav{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
-    background-color: white;
+    z-index: 9;
     width: 100%;
-    margin:auto;
-    overflow:hidden;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
 }
 nav:after {
     content: '';
@@ -42,7 +43,7 @@ nav:after {
     float: left;
     margin: 16px 0 16px 180px;
     font-weight: 300;
-    text-transform: uppercase;
+    
     line-height: 24px;
 }
 
@@ -253,7 +254,7 @@ hr {
 
 .my-projects {
     background-color: #ffffff;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
     text-align: center;
     
@@ -315,7 +316,7 @@ hr {
 .my-projects .project3{
     margin-left: 1.5%;
     margin-right: 2%;
-    background-image: url("http://i66.tinypic.com/ve13s0.jpg");
+    background-image: url(http://i66.tinypic.com/ve13s0.jpg);
     background-size: cover;
    
 }
@@ -323,7 +324,7 @@ hr {
     margin-left: 2%;
     margin-right: 1.5%;
     margin-top: 2%;
-    background-image: url("http://i63.tinypic.com/cnigp.jpg");
+    background-image: url(http://i63.tinypic.com/cnigp.jpg);
     background-size: cover;
    
 }
@@ -331,7 +332,7 @@ hr {
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 2%;
-    background-image: url("http://i65.tinypic.com/zo9b1u.jpg");
+    background-image: url(http://i65.tinypic.com/zo9b1u.jpg);
     background-size: cover;
    
 }
@@ -339,7 +340,7 @@ hr {
     margin-left: 1.5%;
     margin-right: 2%;
     margin-top: 2%;
-    background-image: url("http://i66.tinypic.com/514tix.jpg");
+    background-image: url(http://i66.tinypic.com/514tix.jpg);
     background-size: cover;
    
 }
@@ -350,13 +351,14 @@ hr {
     padding-top: 310px;
    
 }
+
 .my-projects .overlay:hover{
     background-color: rgba(72, 249, 239, 0.5);
     padding-top: 130px;
     transition: all 0.5s ease-in;
-    padding-top: 130px;
+    
 }
-.overlay a{
+.overlay .click{
     display: inline-block;
     color: #f26651;
     font-size: 18px;
@@ -366,11 +368,12 @@ hr {
     background-color: #fff;
 }
 
+
 /*------contact section-----------*/
 .contact-section{
     text-align: center;
     background-color: rgb(255, 255, 255);
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 .contact-section:after{
@@ -404,7 +407,7 @@ hr {
     padding-right: 5%;
 }
 
-}
+
 .social-container i{
     float: left;
     margin-top: 17px;
@@ -417,16 +420,14 @@ hr {
 .col-3 {
     width:33.33%;
     display: inline-block;
-    float:left;
+    float: left;
 }
 .col-3 p{
     margin-bottom: 0;
     margin-top: 7px;
 
 }
-.text-bold{
 
-}
 
 /*----footer-------*/
 footer{
@@ -455,8 +456,7 @@ footer:after{
     margin-right: 15px;
     padding: 10px 10px;
 }
-.social i:hover{
-}
+
 .footer-text p{
     margin-top: 0;
 }
