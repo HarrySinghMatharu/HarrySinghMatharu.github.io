@@ -321,7 +321,7 @@ nav a:focus {
 	}
 
 	.home-about {
-		background: url(../img/code1.jpeg) no-repeat center right fixed; 
+		background: url("http://i63.tinypic.com/2rxfhib.jpg") no-repeat center right fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
